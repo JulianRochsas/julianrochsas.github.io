@@ -1,0 +1,24 @@
+.grdnts {
+    background: linear-gradient(to right, #36d1dc, #5b86e5);
+}
+
+.cntnr{
+    
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    max-width: 1280px;
+    width: 90%;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: auto;
+    border-radius: 100px;
+    margin-bottom: 30px;
+  }
+    
