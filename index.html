@@ -6,73 +6,94 @@
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="vendor/materialize-v1.0.0/materialize/css/materialize.css"  media="screen,projection"/>
     <link type="text/css" rel="stylesheet" href="css/main.css" />
-
+    <!-- <link type="text/css" rel="stylesheet" href="css/style.css" /> -->
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   </head>
 
   <body>
-  <div style="position: absolute;z-index:999999999;">
-    <nav class="transparent z-depth-0">
+    <nav>
         <div class="nav-wrapper container">
           <a href="" class="brand-logo">Julian Rochsas</a>
           <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li><a href="">Home</a></li>
             <li><a href="">Projects</a></li>
+            <li><a href="">Skill</a></li>
             <li><a href="">CV</a></li>
             <li><a href="">Hire Me</a></li>
           </ul>
         </div>
-        
-        <!-- sidebar for mobile view-->
-        <ul class="sidenav" id="mobile-nav">
-          <li><a href="">Home</a></li>
-          <li><a href="">Projects</a></li>
-          <li><a href="">CV</a></li>
-          <li><a href="">Hire Me</a></li>
-        </ul>
     </nav>
-  </div>
-    <!-- off slider -->
-    <div>
-      <li>
-        <img src="img/bf1.jpg" class="responsive-img">
-        <div class="caption center-align">
-            <h3>This is our big Tagline!</h3>
-            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-        </div>
-      </li>
-    </div>
 
-    <!-- <div class="slider">
+    <!-- sidebar for mobile view-->
+    <ul class="sidenav" id="mobile-nav">
+      <li><a href="">Home</a></li>
+      <li><a href="">Projects</a></li>
+      <li><a href="">Skill</a></li>
+      <li><a href="">CV</a></li>
+      <li><a href="">Hire Me</a></li>
+    </ul>
+
+    <div class="slider">
       <ul class="slides">
         <li>
-          <img src="img/bf.jpg"> 
+          <img src="img/bf1.jpg" class="responsive-img"> 
           <div class="caption center-align">
-            <h3>This is our big Tagline!</h3>
-            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            <div class="row center">
+              <div class="avatar" style="background-image:url('img/pp.jpg');"></div>
+                <h5 class="header col s12 light" style="color:white;">Hello! I am Julian Rochsas. I am a Software Engineering enthusiast. I have passion for design perfect, minimal and easy to use interfaces.</h5>
+              </div>
+              <div class="row center">
+                <a href="http://materializecss.com/getting-started.html" id="download-button" class="black-text z-depth-4 btn-large waves-effect waves-light yellow darken-1">Get Started</a>
+              </div>
+                <br><br>
           </div>
         </li>
       </ul>
-    </div> -->
+    </div>
 
-    <!-- <div id="index-banner" class="parallax-container">
-      <div class="section no-pad-bot">
-        <div class="container">
-          <br><br>
-          <div class="row center">
-            <div class="avatar" style="background-image:url('img/pp.jpg');"></div>
-            <h5 class="header col s12 light" style="color:white;">Hello! I am Julian Rochsas. I am a Software Engineering enthusiast. I have passion for design perfect, minimal and easy to use interfaces.</h5>
+    <!-- Skilss -->
+    <section>
+      <div class="container">
+        <div class="row">
+          <h4 class="center">SKILLS</h4>
+          <div class="col m6 light">
+            <p>HTML</p>
+            <div class="progress">
+              <div class="determinate blue" style="width: 70%"></div>
+            </div>
           </div>
-          <div class="row center">
-            <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
+          <div class="col m6 light">
+            <p>CSS</p>
+            <div class="progress">
+              <div class="determinate blue" style="width: 80%"></div>
+            </div>
           </div>
-          <br><br>
+          <div class="col m6 light">
+            <p>PHP</p>
+            <div class="progress">
+              <div class="determinate blue" style="width: 75%"></div>
+            </div>
+          </div>
+          <div class="col m6 light">
+            <p>JavaScript</p>
+            <div class="progress">
+              <div class="determinate blue" style="width: 80%"></div>
+            </div>
+          </div>
+          <div class="col m6 light">
+            <p>MySQL</p>
+            <div class="progress">
+              <div class="determinate blue" style="width: 80%"></div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="parallax"><img src="img/bf1.jpg" alt="Unsplashed background img 1" class="responsive-img"></div>
-    </div>  -->
+    </section>
+
+    <!-- Pojects -->
+    
 
 
     <!--JavaScript at end of body for optimized loading-->
@@ -82,17 +103,12 @@
       var sideNav = document.querySelectorAll('.sidenav');
       M.Sidenav.init(sideNav);
 
-      // var slider = document.querySelectorAll('.slider');
-      // M.Parallax.init(slider);
-
-      (function($){
-        $(function(){
-
-          $('.sidenav').sidenav();
-          $('.parallax').parallax();
-
-        }); // end of document ready
-      })(jQuery); // end of jQuery name space
+      var slider = document.querySelectorAll('.slider');
+      M.Slider.init(slider, {
+        height: 530,
+        indicators: false,
+      });
+      
     </script>
   </body>
 </html>
